@@ -27,7 +27,7 @@ trait FailedValidationResponse
             throw new ValidationException($validator, $response);
         }
 
-        parent::failedValidation();
+        parent::failedValidation($validator);
     }
 
     /**
